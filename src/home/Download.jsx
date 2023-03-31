@@ -1,6 +1,3 @@
-import boxShotImg from "../assets/boxshot.png";
-import downloadImg from "../assets/mobile-0819.jpg";
-
 const Download = () => {
   return (
     <section className="section about">
@@ -11,7 +8,10 @@ const Download = () => {
       <div className="download-wrapper">
         <div className="bar">
           <div className="inner-bar">
-            <img src={boxShotImg} alt="imgstranger" />
+            <img
+              src="https://res.cloudinary.com/dgubzvsvn/image/upload/v1680295921/cv/netflix/boxshot-e1fa26cc_uisnir.png"
+              alt="imgstranger"
+            />
           </div>
           <div className="inner-bar" id="film-title">
             <h4>Stranger Things</h4>
@@ -20,7 +20,10 @@ const Download = () => {
           <div className="inner-bar" id="animation"></div>
         </div>
         <div className="img-box">
-          <img src={downloadImg} alt="device" />
+          <img
+            src="https://res.cloudinary.com/dgubzvsvn/image/upload/v1680295922/cv/netflix/mobile-0819-492fdebd_jd1dux.jpg"
+            alt="device"
+          />
         </div>
       </div>
     </section>

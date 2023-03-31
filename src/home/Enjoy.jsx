@@ -1,5 +1,3 @@
-import tvImg from "../assets/tv.png";
-
 const Enjoy = () => {
   return (
     <section className="section about">
@@ -19,7 +17,10 @@ const Enjoy = () => {
           playsInline
           className="tv"
         ></video>
-        <img src={tvImg} alt="kids" />
+        <img
+          src="https://res.cloudinary.com/dgubzvsvn/image/upload/v1680295921/cv/netflix/tv-b68ea2c7_urtwaj.png"
+          alt="kids"
+        />
       </div>
     </section>
   );

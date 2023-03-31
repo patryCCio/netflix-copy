@@ -1,5 +1,3 @@
-import kidImg from "../assets/kids.png";
-
 const Create = () => {
   return (
     <section className="section about">
@@ -11,7 +9,10 @@ const Create = () => {
         </p>
       </div>
       <div className="img-box">
-        <img src={kidImg} alt="kids" />
+        <img
+          src="https://res.cloudinary.com/dgubzvsvn/image/upload/v1680295922/cv/netflix/kids-50803a48_gwgk7p.png"
+          alt="kids"
+        />
       </div>
     </section>
   );

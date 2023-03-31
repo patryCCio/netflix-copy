@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import bgImg from "../assets/bg.jpg";
 import SecondFooter from "../SecondFooter";
 import { createRef, useState } from "react";
 
@@ -49,7 +48,7 @@ const SignIn = () => {
         <div className="img-bg">
           <div className="img-bg-wrapper">
             <span />
-            <img src={bgImg} alt="bg" />
+            <img src="https://res.cloudinary.com/dgubzvsvn/image/upload/v1680295922/cv/netflix/bg-7a1081e2_k3lvsd.jpg" alt="bg" />
           </div>
         </div>
         <nav>

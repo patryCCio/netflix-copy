@@ -1,5 +1,3 @@
-import watchImg from "../assets/device-pile.png";
-
 const Watch = () => {
   return (
     <section className="section about">
@@ -11,7 +9,10 @@ const Watch = () => {
         </p>
       </div>
       <div className="img-box">
-        <img src={watchImg} alt="kids" />
+        <img
+          src="https://res.cloudinary.com/dgubzvsvn/image/upload/v1680295922/cv/netflix/device-pile-81cf6488_lgtbal.png"
+          alt="kids"
+        />
         <video
           src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
           autoPlay
