@@ -1,0 +1,829 @@
+.section {
+  padding: 3rem 1.4rem;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding: 1.4rem 1.4rem 3rem 1.4rem;
+}
+
+.header .img-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.header .img-bg .img-bg-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.header .img-bg .img-bg-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.header .img-bg .img-bg-wrapper span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.header h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.header p {
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 1.2rem;
+}
+
+.header nav {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 4rem;
+}
+
+.header nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header nav .nav .logo {
+  fill: #e50914;
+  height: 24px;
+}
+
+.header nav .nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: #e50914;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 0.32rem;
+  padding: 0 1rem;
+  height: 32px;
+}
+
+.about {
+  width: 100%;
+  background-color: black;
+  padding: 3rem 1.4rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  max-width: 580px;
+}
+
+.about .about-text h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.about .about-text p {
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 1.2rem;
+}
+
+.about .second-el-margin {
+  margin-top: 1.8rem;
+}
+
+.about .img-box {
+  width: 100%;
+  margin-top: 1.3rem;
+  position: relative;
+  max-width: 580px;
+}
+
+.about .img-box .tv {
+  position: absolute;
+  z-index: 0;
+  top: 21%;
+  left: 13%;
+  width: 74%;
+  height: 54%;
+}
+
+.about .img-box .devices {
+  position: absolute;
+  z-index: 0;
+  top: 11%;
+  left: 12%;
+  width: 77%;
+  height: 47%;
+}
+
+.about .img-box img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .download-wrapper {
+  position: relative;
+}
+
+.about .download-wrapper .bar {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.75rem;
+  border: 1px solid #686868;
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 64px;
+  padding: 0.5rem 0.8rem;
+  gap: 15px;
+  z-index: 2;
+}
+
+.about .download-wrapper .bar #animation {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+  background-position: center;
+  background-size: cover;
+  min-width: 40px;
+}
+
+.about .download-wrapper .bar #film-title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100%;
+}
+
+.about .download-wrapper .bar .inner-bar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  gap: 3px;
+}
+
+.about .download-wrapper .bar .inner-bar img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about .download-wrapper .bar .inner-bar h4 {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.about .download-wrapper .bar .inner-bar #downloading {
+  color: #005feb;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.info {
+  width: 100%;
+  background-color: black;
+  padding: 3rem 1.4rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.info .about-text h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.info .about-text p {
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-top: 1.2rem;
+}
+
+.info .ask-box-wrapper {
+  color: white;
+  margin-top: 1.4rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: start;
+}
+
+.info .ask-box-wrapper .ask-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1170px;
+  background-color: #2d2d2d;
+  padding: 1.313rem 0;
+  font-size: 1.2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.info .ask-box-wrapper .ask-box .ask-box-text {
+  padding: 0 0 0 1.4rem;
+  line-height: 1.6rem;
+}
+
+.info .ask-box-wrapper .ask-box .ask-box-add {
+  padding: 0 1.4rem;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.info .ask-box-wrapper .ask-box:hover {
+  background-color: #686868;
+}
+
+.info .ask-box-wrapper .ask-box.active .ask-box-add {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.info .ask-box-wrapper .ask-content {
+  width: 100%;
+  max-width: 1170px;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  background-color: #2d2d2d;
+  margin-bottom: 10px;
+  padding: 0rem 1.4rem;
+  font-size: 1.2rem;
+}
+
+.info .ask-box-wrapper .ask-content.active {
+  padding: 1.313rem 1.4rem;
+}
+
+.about:nth-child(2n + 1) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-box {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin-top: 1.2rem;
+}
+
+.input-box .input-wrapper {
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.input-box .input-wrapper .email {
+  position: absolute;
+  display: block;
+  top: -5px;
+  left: 15px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-box .input-wrapper .email.active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  top: -12px;
+}
+
+.input-box .input-wrapper input {
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 1.5rem 1rem 0.25rem 1rem;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+.input-box .input-wrapper input:focus {
+  outline: none;
+}
+
+.input-box button {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.3rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+.frequently .input-box .email {
+  padding-top: 1.3rem;
+}
+
+.header.login-box {
+  background-color: black;
+  padding: 1.4rem 1.4rem 9.5rem 1.4rem;
+  margin-bottom: 4px;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header.login-box .img-bg {
+  visibility: hidden;
+}
+
+.header.login-box nav {
+  margin-bottom: 1.8rem;
+}
+
+.header.login-box nav .nav .logo {
+  height: 20px;
+}
+
+.header.login-box .login {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: relative;
+  z-index: 2;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  max-width: 450px;
+  width: 100%;
+}
+
+.header.login-box .login h2 {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  max-width: 314px;
+}
+
+.header.login-box .login .login-input-box {
+  position: relative;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 314px;
+}
+
+.header.login-box .login .login-input-box .login-email,
+.header.login-box .login .login-input-box .login-password {
+  position: absolute;
+  visibility: visible;
+  top: -5px;
+  left: 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header.login-box .login .login-input-box input {
+  width: 100%;
+  max-width: 314px;
+  background-color: #2d2d2d;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1.75rem 1.2rem 0.5rem 1.2rem;
+  color: white;
+}
+
+.header.login-box .login .login-input-box input:focus {
+  outline: none;
+  background-color: #686868;
+}
+
+.header.login-box .login .login-input-box.active .login-email,
+.header.login-box .login .login-input-box.active .login-password {
+  top: -15px;
+  font-size: 0.7rem;
+}
+
+.header.login-box .login .sign-in-button {
+  display: block;
+  text-decoration: none;
+  background-color: #e50914;
+  width: 100%;
+  max-width: 314px;
+  padding: 1rem 0;
+  border-radius: 0.25rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.header.login-box .login .login-box-text {
+  width: 100%;
+  max-width: 314px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #686868;
+  margin-bottom: 1.2rem;
+}
+
+.header.login-box .login .login-box-text .login-box-text-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  gap: 5px;
+}
+
+.header.login-box .login .login-box-text .login-box-text-left h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.header.login-box .login .login-box-text h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header.login-box .login .login-box-text.second {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 15px;
+  gap: 3px;
+}
+
+.header.login-box .login .login-box-text.second h3 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.header.login-box .login .login-box-text.second a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.header.login-box .login .sign-up-now {
+  color: #686868;
+  font-size: 0.8rem;
+  max-width: 314px;
+}
+
+.header.login-box .login .sign-up-now span {
+  color: #005feb;
+}
+
+@media screen and (orientation: landscape) and (min-width: 500px) {
+  .about .download-wrapper .bar {
+    width: 60%;
+  }
+  .header.login-box {
+    padding: 1.4rem 1.4rem 6.3rem 1.4rem;
+  }
+  .header.login-box .login .login-box-text {
+    margin-bottom: 4.6rem;
+  }
+  .header.login-box .login .login-box-text.second {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 1.4rem 1.4rem 7rem 1.4rem;
+  }
+  .header nav {
+    margin-bottom: 9rem;
+  }
+  .about {
+    padding: 4.4rem 1.6rem;
+  }
+  .about .ask-box-wrapper .ask-box .ask-box-text {
+    font-size: 1.5rem;
+  }
+  .about .ask-box-wrapper .ask-box .ask-box-add {
+    font-size: 2.2rem;
+  }
+  .about .download-wrapper .bar {
+    width: 60%;
+    max-height: 84px;
+    bottom: 45px;
+  }
+  .about .download-wrapper .bar .inner-bar h4 {
+    font-size: 1rem;
+  }
+  .input-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 4rem;
+    gap: 10px;
+  }
+  .input-box .input-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 500px;
+  }
+  .input-box .input-wrapper .email {
+    font-size: 1.1rem;
+    top: -3px;
+  }
+  .input-box .input-wrapper input {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .input-box button {
+    font-size: 1.5rem;
+  }
+  .header.login-box {
+    margin-bottom: 0;
+    padding: 1.4rem 1.4rem 0rem 1.4rem;
+    min-height: calc(100vh - 180px);
+  }
+  .header.login-box nav {
+    margin-bottom: 1rem;
+  }
+  .header.login-box nav .nav .logo {
+    height: 50px;
+  }
+  .header.login-box .img-bg {
+    visibility: visible;
+  }
+  .header.login-box .login {
+    padding: 4rem 0 8rem 0;
+  }
+  .header.login-box .login .login-box-text {
+    margin-bottom: 5rem;
+  }
+  .header.login-box .login .login-input-box .login-email,
+  .header.login-box .login .login-input-box .login-password {
+    top: -10px;
+  }
+  .header.login-box .login .login-input-box.active .login-email,
+  .header.login-box .login .login-input-box.active .login-password {
+    top: -20px;
+  }
+  .header.login-box h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 1.4rem 1.4rem 11rem 1.4rem;
+  }
+  .header nav {
+    margin-bottom: 14rem;
+  }
+  .header nav .nav .logo {
+    height: 40px;
+  }
+  .header h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .header p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .about-text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
+    padding: 0 1rem 0 0;
+  }
+  .about .about-text h2 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+  .about .about-text p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+  .about:nth-child(2n + 1) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .about:nth-child(2n + 1) .about-text {
+    padding: 0 0 0 1rem;
+  }
+  .header.login-box {
+    padding: 1.4rem 1.4rem 6rem 1.4rem;
+  }
+  .header.login-box h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */
