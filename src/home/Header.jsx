@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { createRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const Header = () => {
   const [inputValue, setInputValue] = useState("");
 
-  const input = createRef(null);
+  const input = useRef(null);
+  const inputRef = useRef(null);
 
   const handleBlur = (event) => {
     if (inputValue === "") {
@@ -14,6 +15,7 @@ const Header = () => {
 
   const handleFocus = (event) => {
     input.current.classList.add("active");
+    inputRef.current.focus();
   };
 
   const handleChangeInputValue = (event) => {
@@ -57,12 +59,13 @@ const Header = () => {
       </p>
       <div className="input-box">
         <div className="input-wrapper">
-          <p className="email" ref={input}>
+          <p className="email" ref={input} onClick={handleFocus}>
             Email address
           </p>
           <input
             type="email"
             name="inputValue"
+            ref={inputRef}
             value={inputValue}
             onChange={handleChangeInputValue}
             onBlur={handleBlur}

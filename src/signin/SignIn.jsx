@@ -1,6 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SecondFooter from "../SecondFooter";
-import { createRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const SignIn = () => {
   const [inputValues, setInputValues] = useState({
@@ -8,8 +8,8 @@ const SignIn = () => {
     password: "",
   });
 
-  const input1 = createRef(null);
-  const input2 = createRef(null);
+  const input1 = useRef(null);
+  const input2 = useRef(null);
 
   const handleBlur1 = (event) => {
     if (inputValues.login === "") {
@@ -25,14 +25,12 @@ const SignIn = () => {
 
   const handleFocus1 = (event) => {
     input1.current.classList.add("active");
-    input1.current.onfocus();
+    input1.current.children[1].focus();
   };
 
   const handleFocus2 = (event) => {
     input2.current.classList.add("active");
-
-    console.log(input2);
-    input2.current.focus();
+    input2.current.children[1].focus();
   };
 
   const handleChangeInputValues = (event) => {
@@ -48,7 +46,10 @@ const SignIn = () => {
         <div className="img-bg">
           <div className="img-bg-wrapper">
             <span />
-            <img src="https://res.cloudinary.com/dgubzvsvn/image/upload/v1680295922/cv/netflix/bg-7a1081e2_k3lvsd.jpg" alt="bg" />
+            <img
+              src="https://res.cloudinary.com/dgubzvsvn/image/upload/v1680295922/cv/netflix/bg-7a1081e2_k3lvsd.jpg"
+              alt="bg"
+            />
           </div>
         </div>
         <nav>
@@ -71,7 +72,9 @@ const SignIn = () => {
         <div className="login">
           <h2>Sign In</h2>
           <div className="login-input-box" ref={input1}>
-            <p className="login-email" onClick={handleFocus1}>Email or phone number</p>
+            <p className="login-email" onClick={handleFocus1}>
+              Email or phone number
+            </p>
             <input
               type="text"
               name="login"
@@ -82,7 +85,9 @@ const SignIn = () => {
             />
           </div>
           <div className="login-input-box" ref={input2}>
-            <p className="login-password" onClick={handleFocus2}>Password</p>
+            <p className="login-password" onClick={handleFocus2}>
+              Password
+            </p>
             <input
               type="password"
               name="password"

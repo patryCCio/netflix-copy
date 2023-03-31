@@ -1,4 +1,4 @@
-import {React, createRef, useRef, useState } from "react";
+import {React, useRef, useState } from "react";
 
 const Frequently = () => {
   const fakeData = [
@@ -48,7 +48,8 @@ const Frequently = () => {
 
   const [inputValue, setInputValue] = useState("");
 
-  const input = createRef(null);
+  const input = useRef(null);
+  const inputRef = useRef(null);
 
   const handleBlur = (event) => {
     if (inputValue === "") {
@@ -58,6 +59,7 @@ const Frequently = () => {
 
   const handleFocus = (event) => {
     input.current.classList.add("active");
+    inputRef.current.focus();
   };
 
   const handleChangeInputValue = (event) => {
@@ -122,12 +124,13 @@ const Frequently = () => {
       </div>
       <div className="input-box">
         <div className="input-wrapper">
-          <p className="email" ref={input}>
+          <p className="email" ref={input} onClick={handleFocus}>
             Email address
           </p>
           <input
             type="email"
             name="inputValue"
+            ref={inputRef}
             value={inputValue}
             onChange={handleChangeInputValue}
             onBlur={handleBlur}
